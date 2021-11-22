@@ -69,15 +69,15 @@ double sumN(double x, int n, double& last)
 {
 	double sum = 0;
 	double r = 0;
-	for (int i = 1; i <= n; i++)
+	for (int i = 1; i <= n; i++) //вычисление суммы значений ряда
 	{
-		r = (pow(-1, i-1)) * ((pow(x,2*i-2))/fact(2*i-1));
+		r = (pow(-1, i-1)) * ((pow(x,2*i-2))/fact(2*i-1)); //общий вид функции sin(x)/x
 		sum += r;
 	}
-	for (int i = n - 1; i <= n; i++) {
+	for (int i = n - 1; i <= n; i++) { //поиск последнего слагаемого в ряде
 		r = (pow(-1, i - 1)) * ((pow(x, 2 * i - 2)) / fact(2 * i - 1));
 	}
-	last = r;
+	last = r; //"вывод" последнего слагаемого в ряде
 	return sum;
 }
 
