@@ -2,10 +2,7 @@
 // Примерная структура программы на вычисление суммы ряда
 
 
-#include <conio.h>
-#include <locale>
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
